@@ -1,0 +1,425 @@
+/* Variables y reset */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f5f6fa;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+   
+}
+
+
+/* Navegación */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    margin-top: 4rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Secciones Generales */
+.section {
+    text-align: justify;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+/* Cards */
+/* Mantén el diseño original del .card */
+/* Contenedor general de las tarjetas */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: start; /* Alinea las tarjetas desde el inicio */
+}
+
+/* Mantén el diseño del .card */
+.card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Evita desbordes en bordes redondeados */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Efecto más notorio */
+}
+
+/* Enlace envolvente del contenido */
+.card a {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Mantén los colores de texto */
+}
+
+/* Contenido dentro de las tarjetas */
+.card-content {
+    padding: 2rem; /* Ajusta espacio interno */
+    text-align: left; /* Alineación del texto */
+}
+
+/* Títulos y párrafos */
+.card-content h3 {
+    margin: 0 0 1rem; /* Espacio inferior */
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        gap: 1rem; /* Menos espacio entre tarjetas */
+    }
+
+    .card-content {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}
+
+
+
+/* Herramientas */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.tool-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Modelos */
+.models-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.model {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Recursos */
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.resource-group {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resource-group h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.resource-group ul {
+    list-style: none;
+}
+
+.resource-group ul li {
+    margin-bottom: 0.5rem;
+}
+
+.resource-group a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.resource-group a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+/* Estilos base */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de menú hamburguesa */
+.menu-button {
+    display: none; /* Oculto por defecto */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block; /* Muestra el botón hamburguesa */
+    }
+
+    .nav-links {
+        display: none; /* Oculta los enlaces por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 6rem; /* Ajusta la posición */
+        left: 0;
+        background-color:var(--primary-color);
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex; /* Muestra los enlaces cuando el menú está activo */
+    }
+
+    .nav-links li {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+
+
+
+    
+    /* Sección del quiz */
+#quiz {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#quiz h2 {
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+/* Contenedor del quiz */
+.quiz-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    
+}
+
+/* Elementos del quiz */
+.quiz-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.quiz-item h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.quiz-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+/* Estilo para las imágenes */
+.quiz-image {
+    padding: auto;
+    max-width: 100%;
+    height:  auto;
+    border-radius: 8px;
+    
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #quiz {
+        padding: 2rem 1rem;
+    }
+
+    .quiz-item {
+        padding: 1.5rem;
+    }
+}
+
+
+/* Ajuste de la tabla para que sea responsiva */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Para un mejor desplazamiento en dispositivos táctiles */
+  }
+  
+  .table {
+    width: 100%;
+    min-width: 600px; /* Permite un ancho mínimo para no comprimir demasiado la tabla */
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    white-space: nowrap; /* Evita que el texto se ajuste en múltiples líneas */
+  }
+  
+  thead {
+    position: sticky;
+    top: 0; /* Fija el encabezado al hacer scroll horizontal */
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .table {
+      font-size: 0.85rem; /* Reduce ligeramente el tamaño del texto en pantallas pequeñas */
+    }
+  
+    th, td {
+      white-space: normal; /* Permite ajustar el texto en múltiples líneas si es necesario */
+    }
+  }
+
+ 
+
+  
+
+}

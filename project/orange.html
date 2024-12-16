@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <title>Minería de Datos - Portal Educativo</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">DataMining EDU</div>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="herramientas.html">Herramientas</a></li>
+                <li><a href="ejercicios.html">Ejercicios</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="menu.js"></script>
+
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Minería de Datos</h1>
+        <p>
+          Descubre el poder del análisis de datos y sus aplicaciones en el mundo
+          real
+        </p>
+      </div>
+    </header>
+
+    <section id="modelos" class="section">
+      <h2>Orange</h2>
+      <p style="text-align: justify">
+        Orange es una plataforma de código abierto diseñada para la minería de
+        datos, el análisis de datos y el aprendizaje automático. Se destaca por
+        su enfoque visual e interactivo, permitiendo a los usuarios crear flujos
+        de trabajo sin necesidad de programación. Es ideal para principiantes,
+        educadores y analistas de datos que desean realizar análisis complejos
+        de forma intuitiva y eficiente.
+      </p>
+      <h2>¿Qué es Orange?</h2>
+      <p style="text-align: justify">
+        Orange es una herramienta que facilita la creación de procesos de
+        minería de datos mediante una interfaz visual basada en bloques
+        conectados entre sí, conocidos como widgets. Estos widgets representan
+        tareas individuales del flujo de trabajo, como carga de datos,
+        preprocesamiento, modelado, evaluación y visualización. Orange utiliza
+        un enfoque modular, lo que lo hace extremadamente versátil para
+        experimentar con algoritmos y métodos de análisis.
+      </p>
+      <br />
+      <h2>Características Principales de Orange</h2>
+      <br />
+      <div class="list-group">
+        <a class="list-group-item list-group-item-action" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Interfaz Gráfica Intuitiva:</h5>
+          </div>
+          <p class="mb-1">No requiere habilidades de programación.</p>
+          <p class="mb-1">
+            Los flujos de trabajo se construyen visualmente arrastrando y
+            conectando widgets.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Widgets de Funcionalidad Específica:</h5>
+          </div>
+          <p class="mb-1">
+            Orange utiliza widgets para realizar tareas específicas, como cargar
+            datos, aplicar algoritmos de clasificación, clustering o regresión,
+            y visualizar resultados.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Análisis Interactivo de Datos:</h5>
+          </div>
+          <p class="mb-1">
+            Permite explorar y manipular los datos en tiempo real, ajustando
+            parámetros y observando los resultados inmediatamente.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Visualización Atractiva:</h5>
+          </div>
+          <p class="mb-1">
+            Proporciona gráficos dinámicos y visualizaciones intuitivas como
+            barras, dispersiones, mapas de calor, árboles de decisión y redes de
+            relaciones.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Aprendizaje Automático:</h5>
+          </div>
+          <p class="mb-1">
+            Incorpora algoritmos para clasificación, regresión, clustering y
+            otros métodos de machine learning.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Biblioteca Python:</h5>
+          </div>
+          <p class="mb-1">
+            Orange también funciona como una biblioteca de Python, permitiendo a
+            los usuarios integrar scripts personalizados para un análisis más
+            avanzado.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Manejo de Datos:</h5>
+          </div>
+          <p class="mb-1">
+            Permite la carga de datos desde archivos CSV, Excel, SQL y otros
+            formatos.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Extensibilidad:</h5>
+          </div>
+          <p class="mb-1">
+            La herramienta es modular y admite complementos (addons) para
+            ampliar sus funcionalidades.
+          </p>
+        </a>
+      </div>
+
+      <br />
+      <h2>Componentes Principales de Orange</h2>
+      <div class="list-group">
+        <a class="list-group-item list-group-item-action" >
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Widgets:</h5>
+          </div>
+          <p class="mb-1">
+            Son los bloques fundamentales de Orange. Cada widget realiza una
+            tarea específica, como cargar datos, aplicar algoritmos o visualizar
+            resultados.
+          </p>
+          <li>File: Carga de datos.</li>
+          <li>Data Table: Visualización de datos tabulares.</li>
+          <li>Preprocess: Limpieza y transformación de datos.</li>
+          <li>Tree Viewer: Visualización de árboles de decisión.</li>
+          <li>Scatter Plot: Gráficos de dispersión.</li>
+       
+          <a href="grafico.html" style="text-decoration: none; color: cadetblue; font-weight: bold;">Aprende Sobre Graficos.</a>
+        </a>
+       
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Flujos de Trabajo:</h5>
+          </div>
+          <p class="mb-1">
+            Los widgets se conectan entre sí para crear flujos de trabajo. Estos
+            flujos representan procesos completos de análisis de datos y
+            modelado.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Visualizaciones Interactivas:</h5>
+          </div>
+          <p class="mb-1">
+            Herramientas como histogramas, diagramas de dispersión y mapas de
+            calor permiten explorar patrones y correlaciones en los datos.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Evaluación de Modelos:</h5>
+          </div>
+          <p class="mb-1">
+            Orange permite evaluar el rendimiento de diferentes modelos de
+            machine learning mediante métricas como precisión, error y curvas
+            ROC.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Complementos (Add-ons):</h5>
+          </div>
+          <p class="mb-1">
+            Orange admite complementos especializados para realizar tareas
+            específicas, como análisis de texto, bioinformática y redes.
+          </p>
+        </a>
+      </div>
+
+      <br />
+
+      <h2>Principales Funcionalidades de Orange</h2>
+      <div class="list-group">
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Carga y Preprocesamiento de Datos:</h5>
+          </div>
+          <p class="mb-1">
+            Importación de datos desde archivos CSV, Excel o bases de datos.
+          </p>
+          <p class="mb-1">
+            Limpieza de datos, manejo de valores faltantes y normalización.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Análisis Exploratorio de Datos (EDA):</h5>
+          </div>
+          <p class="mb-1">
+            Visualización de patrones y tendencias mediante gráficos
+            interactivos.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Clasificación:</h5>
+          </div>
+          <p class="mb-1">
+            Aplicación de algoritmos como Árboles de Decisión, Naïve Bayes, SVM
+            y KNN para predecir categorías.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Clustering:</h5>
+          </div>
+          <p class="mb-1">
+            Segmentación de datos no etiquetados utilizando métodos como K-Means
+            y Jerárquico.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Regresión:</h5>
+          </div>
+          <p class="mb-1">
+            Predicción de valores numéricos continuos usando algoritmos como
+            Regresión Lineal.
+          </p>
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Reducción de Dimensionalidad:</h5>
+          </div>
+          <p class="mb-1">
+            Métodos como PCA (Análisis de Componentes Principales) para reducir
+            la cantidad de atributos.
+          </p>
+          >
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Evaluación de Modelos:</h5>
+          </div>
+          <p class="mb-1">
+            Comparación de algoritmos y medición del rendimiento usando
+            validación cruzada y métricas como precisión, recall y F1-Score.
+          </p>
+          >
+        </a>
+
+        <a class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Visualización:</h5>
+          </div>
+          <p class="mb-1">
+            Creación de gráficos avanzados para interpretar resultados, como
+            diagramas de dispersión, árboles y mapas de calor.
+          </p>
+          >
+        </a>
+      </div>
+
+      <br />
+
+      <h2>Ventajas de Orange</h2>
+      <div class="list-group">
+        <a
+          class="list-group-item list-group-item-action list-group-item-primary"
+          ><strong>Facilidad de Uso:</strong> Perfecto para usuarios que no
+          tienen experiencia en programación.</a
+        >
+
+        <a
+          class="list-group-item list-group-item-action list-group-item-primary"
+          ><strong>Visualización Interactiva:</strong> Permite observar los
+          resultados de los modelos de forma dinámica y visual.</a
+        >
+
+        <a
+          class="list-group-item list-group-item-action list-group-item-primary"
+          ><strong>Flexibilidad:</strong> Funciona tanto como herramienta visual
+          como biblioteca Python.</a
+        >
+
+        <a
+          class="list-group-item list-group-item-action list-group-item-primary"
+          ><strong>Modularidad:</strong> Los widgets permiten construir procesos
+          personalizados según las necesidades.</a
+        >
+
+        <a
+          class="list-group-item list-group-item-action list-group-item-primary"
+          ><strong>Extensibilidad:</strong> Se pueden agregar complementos
+          especializados para nuevas áreas de análisis.</a
+        >
+      </div>
+      <br />
+
+      <h2>Tabla Comparativa de Herramientas</h2>
+      
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead style="background-color: #3baedb; color: white;">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Herramienta</th>
+              <th scope="col">Características Principales</th>
+              <th scope="col">Ventajas</th>
+              <th scope="col">Desventajas</th>
+              <th scope="col">Casos de Uso</th>
+            </tr>
+          </thead>
+          <tbody style="background-color: #a5a3a3;">
+            <tr>
+              <th scope="row">1</th>
+              <td>RapidMiner</td>
+              <td>Plataforma completa para análisis de datos, incluye modelado, preparación y visualización.</td>
+              <td>
+                - Interfaz gráfica intuitiva.<br>
+                - Amplia biblioteca de algoritmos.<br>
+                - Integración con bases de datos.
+              </td>
+              <td>
+                - Versión gratuita limitada.<br>
+                - Puede ser demandante en recursos para grandes volúmenes de datos.
+              </td>
+              <td>Análisis predictivo, segmentación de clientes, detección de anomalías.</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>KNIME</td>
+              <td>Entorno modular basado en flujos de trabajo para análisis de datos y machine learning.</td>
+              <td>
+                - Open source.<br>
+                - Integración con Python, R, y otros lenguajes.<br>
+                - Amplia comunidad de usuarios.
+              </td>
+              <td>
+                - Puede ser abrumador para principiantes.<br>
+                - Rendimiento puede bajar con grandes volúmenes de datos.
+              </td>
+              <td>Análisis de datos complejos, preparación de datos, integración de sistemas empresariales.</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Weka</td>
+              <td>Software enfocado en minería de datos, con herramientas para clasificación, regresión y clúster.</td>
+              <td>
+                - Open source.<br>
+                - Ligero y fácil de usar.<br>
+                - Soporte para múltiples formatos de datos.
+              </td>
+              <td>
+                - Interfaz anticuada.<br>
+                - Limitado para integraciones y escalabilidad en grandes proyectos empresariales.
+              </td>
+              <td>Investigación académica, experimentación con algoritmos de machine learning, análisis básico de datos.</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Orange</td>
+              <td>Herramienta visual para análisis de datos y visualización interactiva.</td>
+              <td>
+                - Open source.<br>
+                - Fácil de usar, ideal para principiantes.<br>
+                - Extensiones para análisis especializado.
+              </td>
+              <td>
+                - Menos robusto para análisis complejos.<br>
+                - Limitado en términos de escalabilidad y procesamiento masivo.
+              </td>
+              <td>Enseñanza, visualización de datos, exploración inicial de conjuntos de datos.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Portal Educativo de Minería de Datos</p>
+      </div>
+    </footer>
+  </body>
+</html>
